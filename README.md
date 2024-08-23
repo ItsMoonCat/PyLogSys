@@ -1,20 +1,18 @@
 # PyLogSys
-A small logsystem on python, what use a basic print, but a have a little bit more information
+Small log system on python
 
-How to use:
-```py
-# how to import
-from PyLogSys import log
-# debug mode, optional
-import PyLogSys
-PyLogSys.debug = bool # if True, all messages will be displayed despite the type
-# message
-log(MessageType: str, Message: str, Priority: bool)
-```
-Allowed message types:
+Usage:
+![Usage](https://github.com/ItsMoonCat/PyLogSys/blob/master/assets/usage.png?raw=true)
 
-i - Info, e - Error, w - Warning
+Message types:
 
-Message - just message, may be string & f-string
+`i = Info, no priority. w = Warning, no priority. e = Error, priority.`
 
-Priority - bool, priority of message, if True: message will be displayed despite the debug mode, and the type.
+Message - Message, may be string or f-string
+
+Priority - bool, priority of message. If True, message will be displayed despite the debug mode, and the message type.
+
+Code:
+![Code](https://github.com/ItsMoonCat/PyLogSys/blob/master/assets/maincode.png?raw=true)
+
+
